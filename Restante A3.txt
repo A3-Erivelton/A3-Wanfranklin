@@ -1,0 +1,7 @@
+O que falta:
+- Testar/criar armazenamento de cadastros e login de admin (localStorage?);
+- Criar os nomes das empresas, adicionar imagens (adicionar pasta de imagens e dps linkar nos arquivos) e popular a página;
+- Estudar se é possível adicionar um card após um cadastro;
+- Criar página do admin em que se possa fazer um CRUD;
+- Quando o usuário se cadastrar, enviará os dados, apenas (n pode criar cadastrar sem permissão do admin);
+- Fazer botões de voltar

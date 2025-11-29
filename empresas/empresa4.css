@@ -1,0 +1,144 @@
+/* ===== RESET ===== */
+/* Remove margens e espaçamentos padrão de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que padding e borda sejam incluídos no tamanho total do elemento */
+}
+
+/* ===== CORPO ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte principal */
+  background: linear-gradient(135deg, #007bff, #00bcd4); /* Fundo degradê azul tecnológico */
+  color: #fff; /* Cor padrão do texto */
+  min-height: 100vh; /* Altura mínima da tela inteira */
+  display: flex; /* Torna o body um container flexível */
+  flex-direction: column; /* Os elementos dentro ficam empilhados em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 1.5rem; /* Espaçamento interno geral */
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  width: 100%; /* Ocupa toda a largura possível */
+  max-width: 800px; /* Largura máxima para centralizar melhor */
+  display: flex; /* Usa flexbox */
+  justify-content: space-between; /* Espaça o título e o botão "Voltar" nas extremidades */
+  align-items: center; /* Alinha verticalmente no centro */
+  margin-bottom: 1.5rem; /* Espaçamento abaixo do cabeçalho */
+}
+
+/* Estilo do título da página */
+header h1 {
+  font-size: 1.8rem; /* Tamanho da fonte */
+}
+
+/* Estilo do link "Voltar" */
+header .voltar {
+  background: rgba(0, 0, 0, 0.2); /* Fundo semitransparente */
+  color: #fff; /* Cor do texto */
+  padding: 0.4rem 0.8rem; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  text-decoration: none; /* Remove sublinhado */
+  transition: 0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* Efeito hover no botão "Voltar" */
+header .voltar:hover {
+  background: rgba(0, 0, 0, 0.4); /* Escurece ao passar o mouse */
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+  max-width: 800px; /* Largura máxima */
+  background: rgba(255, 255, 255, 0.1); /* Fundo translúcido (efeito vidro fosco) */
+  padding: 1.5rem; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  backdrop-filter: blur(8px); /* Aplica desfoque atrás do elemento */
+  text-align: center; /* Centraliza o conteúdo textual */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+
+/* Imagem principal da empresa */
+main img {
+  width: 50%; /* Ajusta a largura da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+/* Parágrafo descritivo */
+main p {
+  margin-bottom: 1rem; /* Espaço abaixo do texto */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+/* Lista de serviços */
+main ul {
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 0 auto 1rem; /* Centraliza a lista dentro do main */
+  max-width: 460px; /* Limita a largura para boa leitura */
+}
+
+/* Itens da lista */
+main li {
+  margin-bottom: 0.6rem; /* Espaçamento entre os itens */
+  list-style: none; /* Remove os marcadores padrão */
+}
+
+/* ===== BOTÕES ===== */
+/* Container que agrupa os dois botões (e-mail e WhatsApp) */
+.botoes-contato {
+  display: flex; /* Coloca os botões lado a lado */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaço entre os botões */
+  flex-wrap: wrap; /* Quebra linha no celular se precisar */
+  margin-top: 1.5rem; /* Espaço acima dos botões */
+}
+
+/* Estilo geral dos botões */
+.botao-contato {
+  display: inline-flex; /* Alinha ícone e texto lado a lado */
+  align-items: center; /* Centraliza verticalmente o ícone e o texto */
+  gap: 0.5rem; /* Espaçamento entre ícone e texto */
+  background: #ffffff; /* Cor de fundo branca */
+  color: #007bff; /* Cor azul do texto */
+  padding: 0.8rem 1.5rem; /* Tamanho do botão */
+  border-radius: 40px; /* Deixa o botão bem arredondado */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Negrito */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover para os botões brancos */
+.botao-contato:hover {
+  background: #e6e6e6; /* Muda o fundo ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento do tamanho */
+}
+
+/* Botão específico do WhatsApp */
+.botao-whatsapp {
+  background: #25D366; /* Verde do WhatsApp */
+  color: #fff; /* Texto branco */
+  border: 2px solid #25D366; /* Borda verde */
+}
+
+/* Efeito hover no botão do WhatsApp */
+.botao-whatsapp:hover {
+  background: #1ebe5d; /* Verde mais escuro */
+}
+
+/* ===== RESPONSIVIDADE ===== */
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 600px) {
+  /* Imagem ocupa mais espaço na tela menor */
+  main img {
+    width: 90%;
+  }
+
+  /* Botões se adaptam à largura da tela */
+  .botao-contato {
+    width: 90%;
+    justify-content: center;
+  }
+}

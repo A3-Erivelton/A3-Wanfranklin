@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="cadastro-container">
+    <h1>Cadastro de Prestador</h1>
+    <form class="cadastro-form" action="#" method="post">
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
+      <select required>
+        <option value="">Selecione o tipo de serviço</option>
+        <option>Manutenção</option>
+        <option>Jardinagem</option>
+        <option>Limpeza</option>
+        <option>Comércio</option>
+        <option>Outros</option>
+      </select>
+      <input type="password" placeholder="Crie uma senha" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <a href="/login.html">Já tem conta? Fazer login</a>
+  </div>
+</body>
+</html>

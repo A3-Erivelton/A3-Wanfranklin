@@ -1,0 +1,83 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #00bcd4, #007bff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== Container ===== */
+.cadastro-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cadastro-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* ===== Formulário ===== */
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cadastro-form input,
+.cadastro-form select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.cadastro-form input:focus,
+.cadastro-form select:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 4px #00bcd4;
+}
+
+/* ===== Botão ===== */
+.cadastro-form button {
+  padding: 0.8rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cadastro-form button:hover {
+  background-color: #0097a7;
+}
+
+/* ===== Link ===== */
+.cadastro-container a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.cadastro-container a:hover {
+  text-decoration: underline;
+}

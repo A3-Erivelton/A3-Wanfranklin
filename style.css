@@ -1,0 +1,195 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #035c06;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* ===== Título principal ===== */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Botões Login/Cadastro ===== */
+.botoes-container {
+  margin-bottom: 1rem;
+}
+
+a.botaoLogin,
+a.botaoCadastro {
+  display: inline-block;
+  padding: 9px 14px;
+  margin: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+a.botaoLogin {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #ffffff;
+}
+
+a.botaoLogin:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.05);
+}
+
+a.botaoCadastro {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #ffffff;
+}
+
+a.botaoCadastro:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.05);
+}
+
+/* ===== Seção de cards ===== */
+.titulo-section {
+  font-size: 1.8rem;
+  margin: 0.5rem 0 1rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  ;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  color: #363c39;
+  text-decoration: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 300px; /* define altura total (exemplo: 300px ou 320px) */
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 0.2rem 0 0.1rem; /* reduz bem o espaço */
+  line-height: 1.2; /* aproxima o texto */
+}
+
+.card p {
+  font-size: 1rem;
+  padding: 0 0.8rem 0.5rem; /* reduz altura da área branca */
+  line-height: 1.3; /* texto mais compacto */
+}
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .botaoLogin,
+  .botaoCadastro {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .titulo-section {
+    font-size: 1.5rem;
+  }
+}
+
+.acoes-topo {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input-busca {
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  width: 220px;
+  font-size: 1rem;
+}
+
+#temaBtn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #fff;
+  color: #007bff;
+  transition: background 0.3s;
+}
+
+#temaBtn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Tema escuro */
+body.dark {
+  background: linear-gradient(135deg, #222, #444);
+  color: #eee;
+}
+
+body.dark .card {
+  background: #333;
+  color: #eee;
+}
+
+body.dark #temaBtn {
+  background-color: #333;
+  color: #fff;
+}
+.fundo-site {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("imagem_fundo/imagem_de_fundo.png"); /* caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;/* deixa a imagem atrás de todo o conteúdo */
+  filter: brightness(1.8); /* aumenta a claridade (1 = normal, >1 mais claro) */
+  opacity: 0.6; /* deixa mais transparente */
+}
